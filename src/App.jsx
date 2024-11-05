@@ -6,6 +6,7 @@ import Timer from "./components/Timer";
 import About from "./components/About";
 import Features from "./components/Features";
 import Speakers from "./components/Speakers";
+import Ticket from "./components/Ticket";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
       <About />
       <Features />
       <Speakers />
+      <Ticket />
     </div>
   );
 };
