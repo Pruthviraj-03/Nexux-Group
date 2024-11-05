@@ -4,6 +4,100 @@
   box-sizing: border-box;
 }
 
+/* header start */
+.header {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  flex-direction: row;
+  background-color: #101130;
+  padding: 20px;
+}
+
+.nexus-logo {
+  width: 7%;
+  margin-left: 15%;
+  cursor: pointer;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  margin-left: 30%;
+}
+
+.navbar li {
+  list-style: none;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  position: relative;
+  padding-bottom: 5px;
+  padding-top: 10px;
+}
+
+.navbar li::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background: linear-gradient(to right, #f70068 0%, #441066 100%);
+  transition: width 0.4s ease, left 0.4s ease;
+}
+
+.navbar li:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.partner-logo {
+  width: 7%;
+  margin-left: 4%;
+}
+
+.mobile-header {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  flex-direction: row;
+  background-color: #101130;
+  padding: 15px;
+}
+
+.mobile-nexus-logo {
+  width: 10%;
+  height: 30%;
+  margin-left: 5%;
+  cursor: pointer;
+}
+
+.mobile-partner-logo {
+  height: 10%;
+  width: 20%;
+  margin-left: 5%;
+}
+
+.bars-icon {
+  color: #ffffff;
+  font-size: 30px;
+  margin-left: auto;
+  cursor: pointer;
+}
+/* header end */
+
 /* slider start */
 .home {
   height: 850px;
@@ -947,7 +1041,7 @@
   background-color: #101130;
 }
 
-.footer {
+.footer span {
   color: #ffffff;
   font-size: 17px;
   font-family: "Poppins", sans-serif;
@@ -984,6 +1078,20 @@
 
 /* laptop responsive start */
 @media (min-width: 992px) and (max-width: 1400px) {
+  .header {
+    padding: 20px;
+    height: 80px;
+  }
+
+  .nexus-logo {
+    margin-left: 10%;
+  }
+
+  .navbar {
+    gap: 35px;
+    margin-left: 30%;
+  }
+
   .timer {
     width: 80%;
     margin-left: 10%;
@@ -1045,6 +1153,25 @@
 
 /* tablet responsive start */
 @media (min-width: 768px) and (max-width: 991.98px) {
+  .header {
+    padding: 10px;
+    height: 60px;
+  }
+
+  .nexus-logo {
+    margin-left: 5%;
+  }
+
+  .navbar {
+    gap: 15px;
+    margin-left: 30%;
+  }
+
+  .navbar li {
+    margin-top: 10px;
+    font-size: 13px;
+  }
+
   .home {
     height: 750px;
   }
@@ -1167,3 +1294,237 @@
   }
 }
 /* tablet responsive end */
+
+/* mobile responsive start */
+@media (max-width: 575.98px) {
+  .home {
+    height: 550px;
+  }
+
+  .home-event-date {
+    font-size: 22px;
+    letter-spacing: 1px;
+    word-spacing: 2.5px;
+    margin-bottom: 10px;
+  }
+
+  .home-event-name {
+    font-size: 35px;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    margin-bottom: 10px;
+  }
+
+  .home-event-allInfo {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: 80%;
+    gap: 20px;
+  }
+
+  .home-event-info {
+    gap: 7.5px;
+    margin-top: 5px;
+  }
+
+  .book-now-button {
+    width: 35%;
+  }
+
+  .timer {
+    gap: 20px;
+    height: 100px;
+    width: 100%;
+    margin-left: 0;
+    margin-top: -10%;
+  }
+
+  .number {
+    font-size: 30px;
+  }
+
+  .text {
+    font-size: 12px;
+  }
+
+  .dot-icon {
+    font-size: 25px;
+  }
+
+  .about {
+    flex-direction: column;
+    gap: 3%;
+    width: 100%;
+    margin: 10% 0 10% 0%;
+    padding: 20px;
+  }
+
+  .about-info {
+    gap: 12px;
+    width: 100%;
+  }
+
+  .about-info-title {
+    font-size: 25px;
+  }
+
+  .about-info-desc {
+    font-size: 14px;
+  }
+
+  .about-info-features {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .about-info-feature {
+    gap: 15px;
+  }
+
+  .check-icon {
+    margin-bottom: 20px;
+  }
+
+  .register-now-button {
+    width: 50%;
+  }
+
+  .about-image {
+    height: 300px;
+    width: 300px;
+  }
+
+  .about-image img {
+    height: 90%;
+    width: 90%;
+  }
+
+  .outer-circle {
+    height: 100%;
+    width: 100%;
+    margin: 10% 0 0 7.5%;
+  }
+
+  .features {
+    width: 100%;
+    margin: 7% 0 3% 0%;
+    padding: 30px;
+    gap: 0;
+  }
+
+  .box1 {
+    margin-bottom: 2%;
+    width: 100%;
+  }
+
+  .box {
+    width: 100%;
+    margin-bottom: 10%;
+  }
+
+  .speakers {
+    height: 315vh;
+    padding: 20px;
+  }
+
+  .speakers span {
+    font-size: 17px;
+  }
+
+  .speakers h3 {
+    font-size: 30px;
+    letter-spacing: 1px;
+  }
+
+  .all-speakers {
+    width: 100%;
+    gap: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .outer-speakers-circle {
+    height: 240px;
+    width: 70%;
+  }
+
+  .outer-speakers-circle img {
+    height: 220px;
+    width: 92.5%;
+  }
+
+  .outer-speakers-circle span {
+    font-size: 15px;
+  }
+
+  .outer-speakers-circle h3 {
+    font-size: 15px;
+  }
+
+  .ticket {
+    gap: 10px;
+    margin: 15% 0 15% 0;
+  }
+
+  .ticket-title2 {
+    font-size: 35px;
+    letter-spacing: 0.5px;
+  }
+
+  .ticket-cards {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .ticket-card1,
+  .ticket-card2,
+  .ticket-card3 {
+    width: 90%;
+    height: 80vh;
+    flex-direction: column;
+  }
+
+  .ticket-features {
+    margin-top: 12.5px;
+  }
+
+  .register-main {
+    height: auto;
+    width: 100%;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .register-poster {
+    width: 100%;
+  }
+
+  .register-form {
+    height: 70vh;
+    width: 100%;
+    flex-direction: column;
+    gap: 25px;
+    padding: 30px;
+  }
+
+  .form-register-now-button {
+    width: 50%;
+    margin-top: 20px;
+  }
+
+  .footer {
+    height: 70px;
+    padding: 5px;
+  }
+
+  .footer span {
+    font-size: 12px;
+    letter-spacing: 0.5px;
+  }
+}
+/* mobile responsive end */
