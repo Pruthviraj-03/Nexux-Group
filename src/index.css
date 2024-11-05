@@ -173,3 +173,132 @@
   font-weight: 800;
 }
 /* timer end */
+
+/* about start */
+.about {
+  display: flex;
+  flex-direction: row;
+  gap: 5%;
+  height: auto;
+  width: 60%;
+  margin: 5% 0 5% 20%;
+}
+
+.about-info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 50%;
+}
+
+.about-info-name {
+  font-size: 16px;
+  line-height: 1em;
+  font-weight: 500;
+  background: linear-gradient(
+    to left,
+    #f70068 0%,
+    #441066 25%,
+    #f70068 75%,
+    #441066 100%
+  );
+  color: transparent;
+  background-clip: text;
+  letter-spacing: 5px;
+}
+
+.about-info-title {
+  font-size: 40px;
+  line-height: 1.2em;
+  color: #1e1f36;
+  font-weight: 700;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.about-info-desc {
+  font-size: 16px;
+  line-height: 28px;
+  color: #888;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+}
+
+.about-info-features {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.about-info-feature {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+.check-icon {
+  font-size: 2px !important;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #e1137b;
+  border-radius: 50%;
+  color: #e1137b;
+}
+
+.about-info-feature-name {
+  font-size: 16px;
+  line-height: 26px;
+  color: #444;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+}
+
+.register-now-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 27%;
+  border-radius: 11px;
+  margin-top: 30px;
+  cursor: pointer;
+  background-color: #1c94d2;
+}
+
+.register-now-button span {
+  color: #ffffff;
+  font-weight: 600;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.register-now-button:hover {
+  background-color: #ffffff;
+  box-shadow: 0 0 30px #0000004d;
+}
+
+.register-now-button:hover span {
+  color: #1c94d2;
+}
+
+.about-image {
+  height: auto;
+  width: 45%;
+}
+
+.about-image img {
+  border-radius: 50%;
+  height: 95%;
+  width: 95%;
+}
+
+.outer-circle {
+  border: 1px solid white;
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 30px #0000004d;
+}
+/* about end */

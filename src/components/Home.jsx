@@ -8,7 +8,6 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import carousal1 from "../images/carousal1.jpg";
 import carousal2 from "../images/carousal2.jpg";
-import carousal3 from "../images/carousal3.jpg";
 
 const Home = () => {
   const CarouselData = [
