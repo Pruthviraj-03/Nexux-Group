@@ -310,7 +310,7 @@
   gap: 3%;
   height: auto;
   width: 60%;
-  margin: 7% 0 7% 20%;
+  margin: 7% 0 3% 20%;
 }
 
 .box1 {
@@ -388,5 +388,118 @@
   color: #888;
   font-family: "Poppins", sans-serif;
 }
-
 /* features end */
+
+/* speakers start */
+.speakers {
+  position: relative;
+  background-image: url("./images/speakers bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  margin-bottom: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 1;
+}
+
+.speakers::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.speakers span {
+  color: #ffffff;
+  font-size: 27.5px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 5px;
+  z-index: 2;
+  position: relative;
+}
+
+.speakers h3 {
+  color: #ffffff;
+  font-size: 50px;
+  font-weight: 800;
+  font-family: "Poppins", sans-serif;
+  margin-top: 15px;
+  letter-spacing: 2px;
+  z-index: 2;
+  position: relative;
+}
+
+.all-speakers {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  z-index: 2;
+  position: relative;
+  width: 65%;
+  gap: 40px;
+}
+
+.outer-speakers-circle {
+  position: relative;
+  border: 1px solid white;
+  border-radius: 50%;
+  height: 270px;
+  width: 270px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 40px #0000004d;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+.outer-speakers-circle img {
+  border-radius: 50%;
+  height: 250px;
+  width: 250px;
+  transition: transform 0.3s ease;
+}
+
+.outer-speakers-circle:hover img {
+  transform: scale(1.1);
+  filter: brightness(0.5);
+}
+
+.outer-speakers-circle span,
+.outer-speakers-circle h3 {
+  position: absolute;
+  opacity: 0;
+  color: white;
+  transition: opacity 0.3s ease;
+}
+
+.outer-speakers-circle span {
+  bottom: 60px;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 1px;
+}
+
+.outer-speakers-circle h3 {
+  bottom: 30px;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+}
+
+.outer-speakers-circle:hover span,
+.outer-speakers-circle:hover h3 {
+  opacity: 1;
+  z-index: 2;
+}
+/* speakers end */

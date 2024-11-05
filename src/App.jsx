@@ -5,6 +5,7 @@ import Home from "./components/Home";
 import Timer from "./components/Timer";
 import About from "./components/About";
 import Features from "./components/Features";
+import Speakers from "./components/Speakers";
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
       <Timer />
       <About />
       <Features />
+      <Speakers />
     </div>
   );
 };
