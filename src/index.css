@@ -181,7 +181,7 @@
   gap: 5%;
   height: auto;
   width: 60%;
-  margin: 5% 0 5% 20%;
+  margin: 10% 0 10% 20%;
 }
 
 .about-info {
@@ -934,5 +934,49 @@
 .form-register-now-button:hover span {
   color: #24293d;
 }
-
 /* register end */
+
+/* footer start */
+.footer {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #101130;
+}
+
+.footer {
+  color: #ffffff;
+  font-size: 17px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.7px;
+}
+/* footer end */
+
+/* scrolltotop start */
+.scroll-to-top {
+  z-index: 50;
+  position: fixed;
+  bottom: 16px;
+  right: 10px;
+  height: 65px;
+  width: 65px;
+  border: 2px solid black;
+  background-color: black;
+  color: white;
+  font-size: 2.5rem;
+  border-radius: 50%;
+  opacity: 0.7;
+  transition: opacity 0.3s;
+}
+
+.scroll-to-top.visible {
+  display: inline;
+}
+
+.scroll-to-top.hidden {
+  display: none;
+}
+/* scrolltotop end */

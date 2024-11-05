@@ -8,6 +8,8 @@ import Features from "./components/Features";
 import Speakers from "./components/Speakers";
 import Ticket from "./components/Ticket";
 import Register from "./components/Register";
+import Footer from "./components/Footer";
+import ScrollToTop from "./components/ScrollToTop";
 
 const App = () => {
   return (
@@ -19,6 +21,8 @@ const App = () => {
       <Speakers />
       <Ticket />
       <Register />
+      <Footer />
+      <ScrollToTop />
     </div>
   );
 };
