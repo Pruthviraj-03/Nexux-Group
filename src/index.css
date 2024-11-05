@@ -981,3 +981,189 @@
   display: none;
 }
 /* scrolltotop end */
+
+/* laptop responsive start */
+@media (min-width: 992px) and (max-width: 1400px) {
+  .timer {
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  .about {
+    width: 80%;
+    margin: 10% 0 10% 10%;
+  }
+
+  .features {
+    width: 80%;
+    margin: 7% 0 3% 10%;
+  }
+
+  .speakers {
+    height: 120vh;
+  }
+
+  .all-speakers {
+    width: 90%;
+    gap: 40px;
+  }
+
+  .outer-speakers-circle {
+    height: 250px;
+    width: 250px;
+  }
+
+  .outer-speakers-circle img {
+    height: 230px;
+    width: 230px;
+  }
+
+  .ticket-cards {
+    gap: 50px;
+  }
+
+  .ticket-card1,
+  .ticket-card2,
+  .ticket-card3 {
+    height: 80vh;
+  }
+
+  .register-main {
+    width: 80%;
+    margin: 40px 0;
+  }
+
+  .register-poster {
+    height: 70vh;
+  }
+
+  .register-form {
+    height: 70vh;
+  }
+}
+/* laptop responsive end */
+
+/* tablet responsive start */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .home {
+    height: 750px;
+  }
+
+  .timer {
+    width: 100%;
+    margin-left: 0%;
+  }
+
+  .about {
+    flex-direction: column;
+    gap: 8%;
+    width: 100%;
+    margin: 10% 0 10% 0%;
+    padding: 20px;
+  }
+
+  .about-info {
+    width: 100%;
+  }
+
+  .about-image {
+    height: 500px;
+    width: 500px;
+  }
+
+  .about-image img {
+    height: 90%;
+    width: 90%;
+  }
+
+  .outer-circle {
+    height: 100%;
+    width: 100%;
+    margin-left: 25%;
+  }
+
+  .features {
+    width: 100%;
+    margin: 7% 0 3% 0%;
+    padding: 30px;
+  }
+
+  .box1 {
+    width: 48.5%;
+  }
+
+  .box {
+    width: 48.5%;
+  }
+
+  .speakers {
+    height: 190vh;
+    padding: 20px;
+  }
+
+  .all-speakers {
+    width: 100%;
+    gap: 80px;
+    margin-left: 5%;
+  }
+
+  .outer-speakers-circle {
+    height: 300px;
+    width: 300px;
+  }
+
+  .outer-speakers-circle img {
+    height: 280px;
+    width: 280px;
+  }
+
+  .ticket {
+    margin: 10% 0 10% 0;
+  }
+
+  .ticket-cards {
+    flex-direction: column;
+    gap: 70px;
+    margin-top: 20px;
+  }
+
+  .ticket-card1,
+  .ticket-card2,
+  .ticket-card3 {
+    width: 60%;
+    height: 75vh;
+    gap: 40px;
+  }
+
+  .ticket-features {
+    margin-top: 30px;
+  }
+
+  .buy-now-button-card1,
+  .buy-now-button-card2,
+  .buy-now-button-card3 {
+    height: 50px;
+    margin-top: 50px;
+  }
+
+  .register-main {
+    width: 100%;
+    margin: 25px 0;
+    padding: 10px;
+  }
+
+  .register-poster {
+    height: 70vh;
+    width: 50%;
+  }
+
+  .register-form {
+    height: 70vh;
+    width: 50%;
+  }
+
+  .form-register-now-button {
+    width: 50%;
+  }
+}
+/* tablet responsive end */
