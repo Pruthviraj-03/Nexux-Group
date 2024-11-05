@@ -7,6 +7,7 @@ import About from "./components/About";
 import Features from "./components/Features";
 import Speakers from "./components/Speakers";
 import Ticket from "./components/Ticket";
+import Register from "./components/Register";
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
       <Features />
       <Speakers />
       <Ticket />
+      <Register />
     </div>
   );
 };
